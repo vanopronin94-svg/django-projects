@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block title%}
+Книга отзывов 
+{%endblock%}
+{%block content%}
+    <h1>Книга отзывов</h1>
+    <form method="get">
+        <h2>Оставить отзыв</h2>
+        <input type="text" placeholder="Введите имя" name="name">
+        <input type="email" placeholder="Введите адрес электронной почты" name="email">
+        <input type="number" placeholder="Введите оценку от 1 до 5" name="rating">
+        <textarea placeholder="Введите отзыв" name="review"></textarea>
+        <button type="submit">Оставить отзыв</button>
+    </form>
+    <div class="review">
+        <h2>{{name}}</h2>
+        <p>{{rating}}/5</p>
+        <p>{{review}}</p>
+
+    </div>
+{%endblock%}
+<!-- Проект "справочник городов": добавить в список еще 5 городов (можно российских, можно зарубежных), нужно добавить их в список, который передается в представлении (views.py), написать маршруты (urls.py) и создать шаблоны для них (создать файлы HTML в папке templates) - по примеру других городов -->

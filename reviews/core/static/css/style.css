@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(172, 199, 199);
+}
+input, textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+form {
+    background-color: azure;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+button {
+    background-color: rgb(59, 97, 97);
+    color:rgb(209, 212, 212);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+.review{
+    background-color: rgb(86, 187, 187) ;
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
