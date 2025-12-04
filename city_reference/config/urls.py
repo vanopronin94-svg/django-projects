@@ -10,5 +10,6 @@ urlpatterns = [
     path("spb",main, name = "Санкт-Петербург"),
     path("saratov", main, name = "Саратов"),
     path("kazan", main, name = "Казань"),
-    path("samara", main, name = "Самара")
+    path("samara", main, name = "Самара"),
+    path("ekb", main, name = "Екатеринбург")
 ]

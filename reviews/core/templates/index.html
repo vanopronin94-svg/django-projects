@@ -4,12 +4,14 @@
 {%endblock%}
 {%block content%}
     <h1>Книга отзывов</h1>
-    <form method="get">
+    <form method="post">
+        {%csrf_token%}
         <h2>Оставить отзыв</h2>
-        <input type="text" placeholder="Введите имя" name="name">
+        <!-- <input type="text" placeholder="Введите имя" name="name">
         <input type="email" placeholder="Введите адрес электронной почты" name="email">
         <input type="number" placeholder="Введите оценку от 1 до 5" name="rating">
-        <textarea placeholder="Введите отзыв" name="review"></textarea>
+        <textarea placeholder="Введите отзыв" name="review"></textarea> -->
+    {{form}}
         <button type="submit">Оставить отзыв</button>
     </form>
     <div class="review">

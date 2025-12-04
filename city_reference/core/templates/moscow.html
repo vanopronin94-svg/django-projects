@@ -1,32 +1,10 @@
-{%load static%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
-
-</head>
-<body>
-    <div class="menu">
-        <h2>Список городов</h2>
-        <a href="/">Главная</a>
-
-        <ol>
-            {%for city in cities%}
-            <li>
-                <a href="{%url city%}">{{city}}</a>
-            </li>
-            {%endfor%}
-        </ol>
-    </div>
-
-    <div class="main">
+{%extends 'base.html' %}
+{%block title%}
+Москва
+{%endblock%}
+{%block content%}
         <h1>Москва</h1>
         <p>
             Москва — столица России, город федерального значения, административный центр Центрального федерального округа и центр Московской области, в состав которой не входит. 
         </p>
-    </div>
-</body>
-</html>
+{%endblock%}

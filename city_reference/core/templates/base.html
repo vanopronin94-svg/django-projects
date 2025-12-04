@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {%block title%}
+        {%endblock%}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="menu">
+        <h2>Список городов</h2>
+        <a href="/">Главная</a>
+        <ol>
+            {%for city in cities%}
+            <li>
+                <a href="{%url city%}">{{city}}</a>
+            </li>
+            {%endfor%}
+        </ol>
+    </div>
+
+    <div class="main">
+        {%block content%}
+        {%endblock%}
+    </div>
+</body>
+</html>
